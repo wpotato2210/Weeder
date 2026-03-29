@@ -1,0 +1,16 @@
+# See Layer Configuration
+
+## Parameters
+- `row_count`: 1–6
+- `roi_definitions`: per row coordinates
+- `detection_backend`: CV / TFLite / ONNX
+- `camera_assignment`: map camera(s) to row(s)
+- `fps_target`: depends on hardware
+
+## Example Configurationq
+row_count: 3
+detection_backend: TFLite
+camera_assignment:
+camera_1: rows 1–2
+camera_2: row 3
+fps_target: 20
